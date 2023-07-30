@@ -31,7 +31,7 @@ The text file must adhere to the following formats for each model:
 
 4. **DevLogiciel**:
    ```
-   DevLogiciel,username,password,nom,prenom,adresse,email,technologies_utilisees,"",""
+   Employe,username,password,nom,prenom,adresse,email,Devlogiciel, technologies_utilisees,"",""
    ```
    Make sure `technologies_utilisees` is in the format `x|y|z|t`, where `x`, `y`, `z`, and `t` are chosen from the set of valid technologies (SpringBoot, Django, NodeJS, Flask).
 
@@ -60,36 +60,10 @@ The text file must adhere to the following formats for each model:
 4. The script will process the text file and insert the models into the Django database.
 5.  Text File must follow the format provided in the exemple_of_text file provided like this
 
-6. If any errors occur during the insertion process (e.g., incorrect format or missing data), the script will print informative error messages and handle them gracefully.
+6. If any errors occur during the insertion process (e.g., incorrect format or missing data), the script will print informative error messages and handle them gracefully
 
-## Examples
 
-Here are some examples of valid entries for each model:
-
-- **Client**:
-  ```
-  Client,client1,password,Client,One,123 Main St,client1@example.com,"","","",
-  ```
-
-- **Employe**:
-  ```
-  Employe,johndoe,password,John,Doe,456 Elm St,johndoe@example.com,ResponsableRH,True,"","",
-  ```
-
-- **Stagiaire**:
-  ```
-  Stagiaire,sarajones,password,Sara,Jones,789 Oak St,sarajones@example.com,Computer Science,University XYZ,johndoe,
-  ```
-
-- **DevLogiciel**:
-  ```
-  DevLogiciel,mikebrown,password,Mike,Brown,101 Maple St,mikebrown@example.com,SpringBoot|Django,"","",
-  ```
-
-- **ResponsableRH**:
-  ```
-  ResponsableRH,janedoe,password,Jane,Doe,222 Pine St,janedoe@example.com,"","","",
-  ```
+  
  # Security Importance
  
 In addition to providing a streamlined process for HR personnel to insert new users into the database, I also implemented a user-friendly signup mechanism that empowers employees and clients to create their accounts independently. This feature encourages a self-service approach and reduces administrative overhead.
