@@ -172,7 +172,7 @@ def create_objects_from_text_file(input):
     
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python script.py filename.txt")
+        print("Usage: python add_objects.py filename.txt")
         sys.exit(1)
 
     input_file = sys.argv[1]
